@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>지원서</title>
+    </head>
+
+    <body>
+        <!-- 이름 성별 학교 학과 학번 재학 전화번호 -->
+        <h1>지원서</h1>
+        <form action="/signup" method="POST">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="university">학교:</label>
+            <input type="text" id="university" name="university" required /><br />
+
+            <label for="major">학과:</label>
+            <input type="text" id="major" name="major" required /><br />
+
+            <label for="studentNum">학번:</label>
+            <input type="text" id="studentNum" name="studentNum" required /><br />
+
+            <label for="phoneNum">전화번호:</label>
+            <input type="tel" id="phoneNum" name="phoneNum" required /><br />
+
+            <label for="gender">성별:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">남성</option>
+                <option value="female">여성</option></select
+            ><br />
+
+            <label for="enroll">재학 여부:</label>
+            <select id="enroll" name="enroll" required>
+                <option value="enrolled">재학</option>
+                <option value="rest">휴학</option></select
+            ><br />
+
+            <button type="submit">지원하기</button>
+        </form>
+    </body>
+</html>
