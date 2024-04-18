@@ -1,13 +1,87 @@
-<!doctype html>
-<html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Runners HY</title>
-    </head>
-    <body>
-        <h1>Runners HY</h1>
-        <button onclick="location.href='/users'">지원자 정보</button>
-        <button onclick="location.href='/signup'">지원하기</button>
-    </body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RUNNERSHY</title>
+    <meta charset="UTF-8">
+    <style>
+        a {
+          color:white;
+          text-decoration:none;
+        }
+        h1{
+          font-size: 45px;
+          text-align: center;  
+        }
+        #grid{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+        }
+        #grid div{
+            border: 5px solid white;
+            color: white;
+            text-align: center;
+        }
+        #tool{
+            border: solid yellow;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        /* .word{
+            font-weight: bold; 
+            font-size: 20px;
+            line-height: 1; 
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            display: inline;
+            align-items: center;
+            color: white;
+        }
+        .box{
+            border: solid red;
+            padding:40px ;
+            margin: 20px;
+            display: inline;
+            width: 50px;
+            height: 50px;
+             */
+        /* } */
+        /* .s-12{
+            width: 100%;
+        }
+        .m-6{
+            width: 50%;
+        }
+        .l-3{
+            width: 25%;
+        } */
+      </style>
+</head>
+<body style="background-color: black;">
+    <h1><a href="index.html" > RUNNERS'HY</a></h1>
+    <ul>
+        <li><a href="1.html"> 동아리 소개</a></li>
+        <li><a href="2.html"> 임원진 소개</a></li>
+        <li><a href="3.html"> 활동 사진</a></li>
+    </ul>
+
+    <p>runnershy
+        <img src="run.jpg" width="100%">
+    </p>
+    <di id="tool">
+        <div id="grid">
+            <div style="background-color: red;">동아리 소개</div>
+            <div style="background-color: aqua;">운영진</div>
+            <div style="background-color: orange;">활동</div>
+            <div style="background-color: green;">지원하기</div>
+        </div>
+        <img src="runnershy.jpeg" width="100%" height="75%">
+    </div>
+    <p style="margin-top: 60px;">
+
+    </p>
+    <p style="margin-top:60px; color: white;"> running
+    </p>
+</body>
 </html>
